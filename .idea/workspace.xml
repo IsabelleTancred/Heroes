@@ -4,35 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="80c91178-1aa5-46d1-bfa2-ccac31d47c89" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/heroes/Armor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/heroes/ArmorType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/heroes/Hero.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/heroes/HeroAttributes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/heroes/Item.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/heroes/Mage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/heroes/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/heroes/Ranger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/heroes/Rogue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/heroes/Slot.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/heroes/Warrior.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/heroes/Weapon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/heroes/WeaponType.java" afterDir="false" />
-    </list>
+    <list default="true" id="80c91178-1aa5-46d1-bfa2-ccac31d47c89" name="Changes" comment="Feat: classes created" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -110,11 +82,34 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1676367886711</updated>
-      <workItem from="1676367888095" duration="3059000" />
+      <workItem from="1676367888095" duration="3459000" />
     </task>
+    <task id="LOCAL-00001" summary="Feat: classes created">
+      <created>1676376637637</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1676376637637</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Feat: classes created" />
+    <option name="LAST_COMMIT_MESSAGE" value="Feat: classes created" />
   </component>
 </project>

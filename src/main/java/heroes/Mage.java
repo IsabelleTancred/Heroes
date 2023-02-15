@@ -1,25 +1,25 @@
 package heroes;
 
 
+import Items.ArmorType;
+import Items.WeaponType;
+
+import java.util.Arrays;
+import java.util.HashSet;
+
 public class Mage extends Hero{
 
-    public Mage (String name) {
-        this.name = name;
-        level = 1;
-        heroAttributes = new HeroAttributes(1, 1, 8);
-        equipment.put(Slot.HEAD, null);
-        equipment.put(Slot.BODY, null);
-        equipment.put(Slot.LEGS,null);
-        equipment.put(Slot.WEAPON, null);
-        validWeaponTypes.add(WeaponType.STAFF);
-        validWeaponTypes.add(WeaponType.WAND);
 
+    public Mage (String name) {
+        super(name, new HeroAttributes(1, 1,8),
+                new HashSet<>(Arrays.asList(WeaponType.STAFF, WeaponType.WAND)),
+                new HashSet<>(Arrays.asList(ArmorType.CLOTH)));
     }
     @Override
     public void levelUp() {
-        heroAttributes.setStrength(heroAttributes.getStrength()+1);
-        heroAttributes.setDexterity(heroAttributes.getDexterity()+1);
-        heroAttributes.setIntelligence(heroAttributes.getIntelligence()+5);
+        levelAttributes.setStrength(levelAttributes.getStrength()+1);
+        levelAttributes.setDexterity(levelAttributes.getDexterity()+1);
+        levelAttributes.setIntelligence(levelAttributes.getIntelligence()+5);
         level+=1;
     }
 }

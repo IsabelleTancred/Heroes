@@ -1,4 +1,4 @@
-package heroes;
+package Items;
 
 public enum WeaponType {
     AXE,

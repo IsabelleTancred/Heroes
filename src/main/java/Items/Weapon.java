@@ -1,4 +1,4 @@
-package heroes;
+package Items;
 
 public class Weapon extends Item {
     WeaponType weaponType;
@@ -9,6 +9,6 @@ public class Weapon extends Item {
         this.weaponType=weaponType;
         this.requiredLevel=requiredLevel;
         this.weaponDamage=weaponDamage;
-        slot=Slot.WEAPON;
+        slot= Slot.WEAPON;
     }
 }

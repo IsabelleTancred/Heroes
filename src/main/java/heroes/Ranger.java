@@ -1,25 +1,24 @@
 package heroes;
 
-import java.util.AbstractMap;
+import Items.ArmorType;
+import Items.WeaponType;
+
+import java.util.Arrays;
+import java.util.HashSet;
 
 public class Ranger extends Hero{
-    public Ranger (String name) {
-        this.name = name;
-        level = 1;
-        heroAttributes = new HeroAttributes(1, 7, 1);
-        equipment.put(Slot.HEAD, null);
-        equipment.put(Slot.BODY, null);
-        equipment.put(Slot.LEGS,null);
-        equipment.put(Slot.WEAPON, null);
-        validWeaponTypes.add(WeaponType.BOW);
 
+    public Ranger (String name) {
+        super(name, new HeroAttributes(1, 7,1),
+                new HashSet<>(Arrays.asList(WeaponType.BOW)),
+                new HashSet<>(Arrays.asList(ArmorType.LEATHER,ArmorType.MAIL)));
     }
 
     @Override
     public void levelUp() {
-        heroAttributes.setStrength(heroAttributes.getStrength()+1);
-        heroAttributes.setDexterity(heroAttributes.getDexterity()+5);
-        heroAttributes.setIntelligence(heroAttributes.getIntelligence()+1);
+        levelAttributes.setStrength(levelAttributes.getStrength()+1);
+        levelAttributes.setDexterity(levelAttributes.getDexterity()+5);
+        levelAttributes.setIntelligence(levelAttributes.getIntelligence()+1);
         level+=1;
     }
 }

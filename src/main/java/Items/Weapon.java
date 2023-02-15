@@ -1,6 +1,7 @@
 package Items;
 
 public class Weapon extends Item {
+
     WeaponType weaponType;
     int weaponDamage;
 
@@ -11,4 +12,12 @@ public class Weapon extends Item {
         this.weaponDamage=weaponDamage;
         slot= Slot.WEAPON;
     }
+
+    public int getWeaponDamage() {
+        return weaponDamage;
+    }
+    public WeaponType getWeaponType() {
+        return weaponType;
+    }
+
 }

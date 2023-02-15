@@ -6,7 +6,7 @@ import Items.WeaponType;
 public class Main {
 
     static Mage mage = new Mage("Isabelle");
-    static Weapon weapon = new Weapon("Axe", WeaponType.AXE, 3, 3);
+    static Weapon weapon = new Weapon("Axe", WeaponType.WAND, 3, 3);
 
     public static void main(String[] args) {
         System.out.println("Hello World");

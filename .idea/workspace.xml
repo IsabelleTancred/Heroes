@@ -4,20 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="80c91178-1aa5-46d1-bfa2-ccac31d47c89" name="Changes" comment="Feat: classes created">
+    <list default="true" id="80c91178-1aa5-46d1-bfa2-ccac31d47c89" name="Changes" comment="Feat: new package, constructor in hero class, working on equip()">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/heroes/Armor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Items/Armor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/heroes/ArmorType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Items/ArmorType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Items/Armor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Items/Armor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Items/Weapon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Items/Weapon.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/heroes/Hero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/heroes/Hero.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/heroes/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Items/Item.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/heroes/Mage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/heroes/Mage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/heroes/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/heroes/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/heroes/Ranger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/heroes/Ranger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/heroes/Rogue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/heroes/Rogue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/heroes/Slot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Items/Slot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/heroes/Warrior.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/heroes/Warrior.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/heroes/Weapon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Items/Weapon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/heroes/WeaponType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Items/WeaponType.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +101,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1676367886711</updated>
-      <workItem from="1676367888095" duration="12249000" />
+      <workItem from="1676367888095" duration="16332000" />
     </task>
     <task id="LOCAL-00001" summary="Feat: classes created">
       <created>1676376637637</created>
@@ -125,7 +117,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676376888919</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Feat: new package, constructor in hero class, working on equip()">
+      <created>1676452509310</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1676452509310</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -144,6 +143,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Feat: classes created" />
-    <option name="LAST_COMMIT_MESSAGE" value="Feat: classes created" />
+    <MESSAGE value="Feat: new package, constructor in hero class, working on equip()" />
+    <option name="LAST_COMMIT_MESSAGE" value="Feat: new package, constructor in hero class, working on equip()" />
   </component>
 </project>

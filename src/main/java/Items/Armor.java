@@ -3,6 +3,7 @@ package Items;
 import heroes.HeroAttributes;
 
 public class Armor extends Item {
+
     ArmorType armorType;
 
     HeroAttributes armorAttribute;
@@ -12,5 +13,9 @@ public class Armor extends Item {
         this.requiredLevel=requiredLevel;
         this.slot=slot;
         this.armorAttribute=armorAttribute;
+    }
+
+    public ArmorType getArmorType() {
+        return armorType;
     }
 }

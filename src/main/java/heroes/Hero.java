@@ -1,10 +1,7 @@
 package heroes;
 
 
-import Items.Armor;
-import Items.Item;
-import Items.Slot;
-import Items.WeaponType;
+import Items.*;
 
 import java.util.*;
 
@@ -34,15 +31,24 @@ public abstract class Hero {
     
     public abstract void levelUp ();
     
-    public void equip(Item item){
-        if(item.requiredLevel>this.level){
+    public void equip(Weapon weapon){
+        if(weapon.requiredLevel>this.level){
             throw new RuntimeException("too high level"); //TODO: fix a custom InvalidArmorException
         }
-        //TODO: check if weapon or armor
-        //TODO: check valid type
-        equipment.put(item.slot, item);
+        if (!validWeaponTypes.contains(weapon.getWeaponType())){
+            throw new RuntimeException("invalid weaponType");
+        }
+        equipment.put(weapon.slot, weapon);
     }
-    ;
+    public void equip(Armor armor){
+        if(armor.requiredLevel>this.level){
+            throw new RuntimeException("too high level"); //TODO: fix a custom InvalidArmorException
+        }
+        if (!validWeaponTypes.contains(armor.getArmorType())){
+            throw new RuntimeException("invalid armorType");
+        }
+        equipment.put(armor.slot, armor);
+    }
 
     //public abstract int damage();
 

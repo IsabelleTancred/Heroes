@@ -19,3 +19,9 @@ public class Main {
 
     }
 }
+
+//TODO: implement Total()
+//TODO: use Total() in damage()
+//TODO: Write own exceptions
+//TODO: write tests
+//TODO: If time-> refactor code

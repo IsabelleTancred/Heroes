@@ -36,4 +36,9 @@ public class HeroAttributes {
     public void setIntelligence(int intelligence) {
         this.intelligence = intelligence;
     }
+
+    public HeroAttributes add (HeroAttributes ha1, HeroAttributes ha2){
+        HeroAttributes sum =new HeroAttributes((ha1.getStrength()+ha2.getStrength()),(ha1.getDexterity()+ha2.getDexterity()),(ha1.getIntelligence()+ha2.getIntelligence()));
+        return sum;
+    }
 }

@@ -12,6 +12,7 @@ public class Ranger extends Hero{
         super(name, new HeroAttributes(1, 7,1),
                 new HashSet<>(Arrays.asList(WeaponType.BOW)),
                 new HashSet<>(Arrays.asList(ArmorType.LEATHER,ArmorType.MAIL)));
+                damagingAttribute= this.levelAttributes.getDexterity();
     }
 
     @Override
@@ -20,5 +21,8 @@ public class Ranger extends Hero{
         levelAttributes.setDexterity(levelAttributes.getDexterity()+5);
         levelAttributes.setIntelligence(levelAttributes.getIntelligence()+1);
         level+=1;
+        damagingAttribute=levelAttributes.getDexterity();
     }
+
+
 }

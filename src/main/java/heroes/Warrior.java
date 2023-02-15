@@ -12,6 +12,7 @@ public class Warrior extends Hero{
         super(name, new HeroAttributes(5, 2,1),
                 new HashSet<>(Arrays.asList(WeaponType.AXE, WeaponType.HAMMER, WeaponType.SWORD)),
                 new HashSet<>(Arrays.asList(ArmorType.MAIL, ArmorType.PLATE)));
+                damagingAttribute=this.levelAttributes.getStrength();
     }
 
     @Override
@@ -20,5 +21,7 @@ public class Warrior extends Hero{
         levelAttributes.setDexterity(levelAttributes.getDexterity()+2);
         levelAttributes.setIntelligence(levelAttributes.getIntelligence()+1);
         level+=1;
+        damagingAttribute=levelAttributes.getStrength();
     }
+
 }

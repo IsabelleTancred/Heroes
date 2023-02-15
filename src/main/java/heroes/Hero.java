@@ -16,6 +16,8 @@ public abstract class Hero {
 
     Set<Armor> validArmorTypes;
 
+    int damagingAttribute;
+
     public Hero(String name, HeroAttributes heroAttributes, Set validWeaponTypes , Set validArmorTypes ){
         this.name = name;
         level = 1;
@@ -50,7 +52,18 @@ public abstract class Hero {
         equipment.put(armor.slot, armor);
     }
 
-    //public abstract int damage();
+    public int damage() {
+        int weaponDamage;
+        if(equipment.get(Slot.WEAPON)==null){
+            weaponDamage=1;
+        }
+        else {
+            Weapon a= (Weapon) equipment.get(Slot.WEAPON);
+            weaponDamage= a.getWeaponDamage();
+        }
+        int heroDamage = weaponDamage * (1 + damagingAttribute /100);
+        return heroDamage;
+    }
 
     //public abstract int totalAttributes();
     public void display (){

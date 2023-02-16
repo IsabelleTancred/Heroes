@@ -12,7 +12,6 @@ public class Mage extends Hero{
         super(name, new HeroAttributes(1, 1,8),
                 new HashSet<>(Arrays.asList(WeaponType.STAFF, WeaponType.WAND)),
                 new HashSet<>(Arrays.asList(ArmorType.CLOTH)));
-                damagingAttribute=this.levelAttributes.getIntelligence();
     }
     @Override
     public void levelUp() {
@@ -20,7 +19,19 @@ public class Mage extends Hero{
         levelAttributes.setDexterity(levelAttributes.getDexterity()+1);
         levelAttributes.setIntelligence(levelAttributes.getIntelligence()+5);
         level+=1;
-        damagingAttribute=levelAttributes.getIntelligence();
+    }
+
+    @Override
+    public int damage() {
+        int weaponDamage;
+        if (equipment.get(Slot.WEAPON) == null || equipment.get(Slot.WEAPON) instanceof Armor) {
+            weaponDamage = 1;
+        } else{
+            Weapon a = (Weapon) equipment.get(Slot.WEAPON);
+            weaponDamage = a.getWeaponDamage();
+        }
+        int heroDamage = weaponDamage * (1 + totalAttributes().getIntelligence() / 100);
+        return heroDamage;
     }
 
 }

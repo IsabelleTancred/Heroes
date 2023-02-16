@@ -1,7 +1,6 @@
 package heroes;
 
-import Items.ArmorType;
-import Items.WeaponType;
+import Items.*;
 
 import java.util.Arrays;
 import java.util.HashSet;
@@ -12,7 +11,6 @@ public class Warrior extends Hero{
         super(name, new HeroAttributes(5, 2,1),
                 new HashSet<>(Arrays.asList(WeaponType.AXE, WeaponType.HAMMER, WeaponType.SWORD)),
                 new HashSet<>(Arrays.asList(ArmorType.MAIL, ArmorType.PLATE)));
-                damagingAttribute=this.levelAttributes.getStrength();
     }
 
     @Override
@@ -21,7 +19,19 @@ public class Warrior extends Hero{
         levelAttributes.setDexterity(levelAttributes.getDexterity()+2);
         levelAttributes.setIntelligence(levelAttributes.getIntelligence()+1);
         level+=1;
-        damagingAttribute=levelAttributes.getStrength();
+    }
+
+    @Override
+    public int damage() {
+        int weaponDamage;
+        if (equipment.get(Slot.WEAPON) == null || equipment.get(Slot.WEAPON) instanceof Armor) {
+            weaponDamage = 1;
+        } else{
+            Weapon a = (Weapon) equipment.get(Slot.WEAPON);
+            weaponDamage = a.getWeaponDamage();
+        }
+        int heroDamage = weaponDamage * (1 + totalAttributes().getStrength() / 100);
+        return heroDamage;
     }
 
 }

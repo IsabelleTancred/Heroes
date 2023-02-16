@@ -1,7 +1,6 @@
 package heroes;
 
-import Items.ArmorType;
-import Items.WeaponType;
+import Items.*;
 
 import java.util.Arrays;
 import java.util.HashSet;
@@ -12,7 +11,6 @@ public class Rogue extends Hero{
         super(name, new HeroAttributes(2, 6,1),
                 new HashSet<>(Arrays.asList(WeaponType.DAGGER, WeaponType.SWORD)),
                 new HashSet<>(Arrays.asList(ArmorType.LEATHER, ArmorType.MAIL)));
-                damagingAttribute=this.levelAttributes.getDexterity();
     }
 
 
@@ -22,7 +20,7 @@ public class Rogue extends Hero{
         levelAttributes.setDexterity(levelAttributes.getDexterity()+4);
         levelAttributes.setIntelligence(levelAttributes.getIntelligence()+1);
         level+=1;
-        damagingAttribute=levelAttributes.getDexterity();
     }
+
 
 }

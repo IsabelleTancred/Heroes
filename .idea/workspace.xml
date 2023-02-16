@@ -4,14 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="80c91178-1aa5-46d1-bfa2-ccac31d47c89" name="Changes" comment="Feat: equip is working. Still needs exceptionmessages.">
+    <list default="true" id="80c91178-1aa5-46d1-bfa2-ccac31d47c89" name="Changes" comment="Feat: calculate damage. (does not use armor atm)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Items/Armor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Items/Armor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Items/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Items/Item.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/heroes/Hero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/heroes/Hero.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/heroes/HeroAttributes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/heroes/HeroAttributes.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/heroes/Mage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/heroes/Mage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/heroes/Ranger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/heroes/Ranger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/heroes/Rogue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/heroes/Rogue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/heroes/Warrior.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/heroes/Warrior.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +102,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1676367886711</updated>
-      <workItem from="1676367888095" duration="18583000" />
+      <workItem from="1676367888095" duration="22164000" />
     </task>
     <task id="LOCAL-00001" summary="Feat: classes created">
       <created>1676376637637</created>
@@ -133,7 +132,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676458620525</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Feat: calculate damage. (does not use armor atm)">
+      <created>1676465740023</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1676465740023</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -154,6 +160,7 @@
     <MESSAGE value="Feat: classes created" />
     <MESSAGE value="Feat: new package, constructor in hero class, working on equip()" />
     <MESSAGE value="Feat: equip is working. Still needs exceptionmessages." />
-    <option name="LAST_COMMIT_MESSAGE" value="Feat: equip is working. Still needs exceptionmessages." />
+    <MESSAGE value="Feat: calculate damage. (does not use armor atm)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Feat: calculate damage. (does not use armor atm)" />
   </component>
 </project>

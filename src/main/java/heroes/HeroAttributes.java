@@ -37,8 +37,9 @@ public class HeroAttributes {
         this.intelligence = intelligence;
     }
 
-    public HeroAttributes add (HeroAttributes ha1, HeroAttributes ha2){
-        HeroAttributes sum =new HeroAttributes((ha1.getStrength()+ha2.getStrength()),(ha1.getDexterity()+ha2.getDexterity()),(ha1.getIntelligence()+ha2.getIntelligence()));
-        return sum;
+    public void add (HeroAttributes ha2){
+        this.setStrength(this.getStrength()+ha2.getStrength());
+        this.setDexterity(this.getDexterity()+ha2.getDexterity());
+        this.setIntelligence(this.getIntelligence()+ ha2.getIntelligence());
     }
 }

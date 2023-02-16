@@ -4,19 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="80c91178-1aa5-46d1-bfa2-ccac31d47c89" name="Changes" comment="Feat: damage() and totalAttribute () implemented correct">
+    <list default="true" id="80c91178-1aa5-46d1-bfa2-ccac31d47c89" name="Changes" comment="refactor: changed names">
+      <change afterPath="$PROJECT_DIR$/src/main/java/exceptions/InvalidArmorException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/exceptions/InvalidWeaponException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Items/Armor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/items/Armor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Items/ArmorType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/items/ArmorType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Items/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/items/Item.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Items/Slot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/items/Slot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Items/Weapon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/items/Weapon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Items/WeaponType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/items/WeaponType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/heroes/Hero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/heroes/Hero.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/heroes/Mage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/heroes/Mage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/heroes/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/heroes/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/heroes/Ranger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/heroes/Ranger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/heroes/Rogue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/heroes/Rogue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/heroes/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/heroes/Warrior.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/heroes/Warrior.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -83,7 +77,7 @@
 }]]></component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="heroes.Main" />
+      <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Heroes.main" />
       <extension name="coverage">
         <pattern>
@@ -109,7 +103,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1676367886711</updated>
-      <workItem from="1676367888095" duration="23400000" />
+      <workItem from="1676367888095" duration="29312000" />
     </task>
     <task id="LOCAL-00001" summary="Feat: classes created">
       <created>1676376637637</created>
@@ -153,7 +147,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676549199305</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="refactor: changed names">
+      <created>1676549933125</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1676549933125</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -176,6 +177,7 @@
     <MESSAGE value="Feat: equip is working. Still needs exceptionmessages." />
     <MESSAGE value="Feat: calculate damage. (does not use armor atm)" />
     <MESSAGE value="Feat: damage() and totalAttribute () implemented correct" />
-    <option name="LAST_COMMIT_MESSAGE" value="Feat: damage() and totalAttribute () implemented correct" />
+    <MESSAGE value="refactor: changed names" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: changed names" />
   </component>
 </project>

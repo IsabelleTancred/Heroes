@@ -1,5 +1,7 @@
 package heroes;
 
+import exceptions.InvalidArmorException;
+import exceptions.InvalidWeaponException;
 import items.*;
 
 import java.util.*;
@@ -9,7 +11,7 @@ public abstract class Hero {
     int level;
     HeroAttributes levelAttributes;
 
-    Map<Slot, Item> equipment = new HashMap<>();
+     public Map<Slot, Item> equipment = new HashMap<>();
 
     Set<WeaponType> validWeaponTypes;
 
@@ -31,23 +33,34 @@ public abstract class Hero {
     public abstract void levelUp();
 
     public void equip(Weapon weapon) {
+        try {
+
         if (weapon.requiredLevel > this.level) {
-            throw new RuntimeException("too high level"); //TODO: fix a custom InvalidArmorException
+            throw new InvalidWeaponException("The weapons required level is higher than the heroes level");
         }
         if (!validWeaponTypes.contains(weapon.getWeaponType())) {
-            throw new RuntimeException("invalid weaponType");
+            throw new InvalidWeaponException("invalid weaponType");
         }
         equipment.put(weapon.slot, weapon);
+        }
+        catch (InvalidWeaponException e){
+            System.out.println(e.getMessage());
+        }
     }
 
     public void equip(Armor armor) {
-        if (armor.requiredLevel > this.level) {
-            throw new RuntimeException("too high level"); //TODO: fix a custom InvalidArmorException
+        try {
+            if (armor.requiredLevel > this.level) {
+                throw new InvalidArmorException("The armors required level is higher than the heroes level"); //TODO: fix a custom InvalidArmorException
+            }
+            if (!validArmorTypes.contains(armor.getArmorType())) {
+                throw new InvalidArmorException("invalid armorType");
+            }
+            equipment.put(armor.slot, armor);
         }
-        if (!validArmorTypes.contains(armor.getArmorType())) {
-            throw new RuntimeException("invalid armorType");
+        catch (InvalidArmorException e){
+            System.out.println(e.getMessage());
         }
-        equipment.put(armor.slot, armor);
     }
 
     public int damage() {
@@ -58,7 +71,7 @@ public abstract class Hero {
             Weapon a = (Weapon) equipment.get(Slot.WEAPON);
             weaponDamage = a.getWeaponDamage();
         }
-        int heroDamage = weaponDamage * (1 + totalAttributes().getDexterity() / 100);
+        int heroDamage = weaponDamage * (1 + (totalAttributes().getDexterity() / 100));
         return heroDamage;
     }
 

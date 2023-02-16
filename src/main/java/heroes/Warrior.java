@@ -30,7 +30,7 @@ public class Warrior extends Hero{
             Weapon a = (Weapon) equipment.get(Slot.WEAPON);
             weaponDamage = a.getWeaponDamage();
         }
-        int heroDamage = weaponDamage * (1 + totalAttributes().getStrength() / 100);
+        int heroDamage = weaponDamage * (1 + (totalAttributes().getStrength() / 100));
         return heroDamage;
     }
 

@@ -1,7 +1,7 @@
 package heroes;
 
-import Items.Weapon;
-import Items.WeaponType;
+import items.Weapon;
+import items.WeaponType;
 
 public class Main {
 

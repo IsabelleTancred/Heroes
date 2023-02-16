@@ -1,7 +1,7 @@
 package heroes;
 
 
-import Items.*;
+import items.*;
 
 import java.util.Arrays;
 import java.util.HashSet;

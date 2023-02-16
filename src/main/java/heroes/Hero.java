@@ -1,6 +1,6 @@
 package heroes;
 
-import Items.*;
+import items.*;
 
 import java.util.*;
 
